@@ -7,7 +7,7 @@ function Header() {
             A
           </div>
           <div>
-            <div className="text-lg font-bold tracking-tight">Atlas Freight</div>
+            <div className="text-lg font-bold tracking-tight">Airsell Cargo</div>
             <div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Global Logistics</div>
           </div>
         </a>
@@ -41,9 +41,9 @@ export default function ContactPage() {
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-soft">
             <div className="space-y-5 text-slate-200">
-              <p>Phone: +971 4 555 2048</p>
-              <p>Email: hello@atlasfreight.com</p>
-              <p>Address: Dubai Logistics Park, UAE</p>
+              <p>Phone: +252 634 823310</p>
+              <p>Email: info@airsellcargo.com</p>
+              <p>Location: Somalia</p>
               <p>Hours: Monday – Saturday, 8:00 AM – 8:00 PM</p>
             </div>
           </div>

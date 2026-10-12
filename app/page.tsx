@@ -1,34 +1,34 @@
 const services = [
   {
     title: 'Air Freight',
-    description: 'Fast-moving air cargo solutions for urgent, time-sensitive, and high-value shipments across global trade lanes.',
+    description: 'Fast and dependable air cargo services for time-sensitive shipments, urgent goods, and cross-border deliveries.',
   },
   {
     title: 'Sea Freight',
-    description: 'Flexible FCL and LCL ocean freight options designed for cost efficiency and reliable transit schedules.',
+    description: 'Flexible sea freight solutions for bulk shipments, container cargo, and cost-efficient international transport.',
   },
   {
     title: 'Customs Clearance',
-    description: 'Documentation, compliance checks, and border coordination help reduce delays and keep cargo moving smoothly.',
+    description: 'Efficient customs processing and documentation support to reduce delays and keep cargo moving without disruption.',
   },
   {
     title: 'Warehousing',
-    description: 'Secure storage, inventory visibility, and distribution support for import, export, and bonded operations.',
+    description: 'Secure storage, handling, and inventory support for importers, exporters, and businesses with growing supply chains.',
   },
 ];
 
 const stats = [
-  { number: '25+', label: 'Years of logistics expertise' },
-  { number: '120+', label: 'Global trade routes served' },
-  { number: '99.5%', label: 'On-time milestone performance' },
-  { number: '24/7', label: 'Client support' },
+  { number: '24/7', label: 'Customer support' },
+  { number: '100+', label: 'Shipments coordinated' },
+  { number: '99%', label: 'Operational reliability' },
+  { number: 'Global', label: 'Freight network' },
 ];
 
 const highlights = [
-  'Door-to-door logistics coordination',
-  'Experienced air and sea freight specialists',
-  'Transparent pricing and milestone tracking',
-  'Clear customs and compliance support',
+  'Door-to-door cargo coordination',
+  'Reliable air and sea freight services',
+  'Transparent communication and updates',
+  'Customs and documentation assistance',
 ];
 
 function Header() {
@@ -40,7 +40,7 @@ function Header() {
             A
           </div>
           <div>
-            <div className="text-lg font-bold tracking-tight">Atlas Freight</div>
+            <div className="text-lg font-bold tracking-tight">Airsell Cargo</div>
             <div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Global Logistics</div>
           </div>
         </a>
@@ -69,13 +69,13 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
         <div className="flex flex-col justify-center">
           <span className="mb-5 inline-flex w-fit rounded-full border border-brand-100 bg-brand-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">
-            Trusted shipping partners
+            Trusted shipping partner
           </span>
           <h1 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
-            Move cargo globally with confidence.
+            Shipping cargo across borders with speed and confidence.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-slate-600">
-            From urgent air shipments to cost-effective sea freight and customs coordination, we help businesses move goods faster, smarter, and with full visibility.
+            Airsell Cargo helps businesses move goods safely and efficiently through air and sea freight solutions, customs support, and responsive logistics coordination.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -88,11 +88,11 @@ export default function Home() {
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-500">
-            <span>Import & export logistics</span>
+            <span>Air freight</span>
+            <span>•</span>
+            <span>Sea freight</span>
             <span>•</span>
             <span>Customs support</span>
-            <span>•</span>
-            <span>24/7 operations</span>
           </div>
         </div>
 
@@ -105,7 +105,7 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <div>
                   <div className="text-sm uppercase tracking-[0.2em] text-sky-100">Live shipment</div>
-                  <div className="mt-3 text-3xl font-bold">AF-2048</div>
+                  <div className="mt-3 text-3xl font-bold">AC-2048</div>
                 </div>
                 <div className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wider">
                   In transit
@@ -115,11 +115,11 @@ export default function Home() {
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div>
                   <div className="text-xs uppercase tracking-[0.2em] text-sky-100">Origin</div>
-                  <div className="mt-2 text-xl font-semibold">Dubai</div>
+                  <div className="mt-2 text-xl font-semibold">Mogadishu</div>
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-[0.2em] text-sky-100">Destination</div>
-                  <div className="mt-2 text-xl font-semibold">Singapore</div>
+                  <div className="mt-2 text-xl font-semibold">Dubai</div>
                 </div>
               </div>
 
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                 <div className="text-xs uppercase tracking-[0.2em] text-slate-500">Route</div>
-                <div className="mt-2 text-lg font-semibold text-slate-800">Asia-Pacific</div>
+                <div className="mt-2 text-lg font-semibold text-slate-800">Africa–Middle East</div>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                 <div className="text-xs uppercase tracking-[0.2em] text-slate-500">ETA</div>
@@ -182,7 +182,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-soft">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">Why choose us</p>
-            <h3 className="mt-4 text-3xl font-black tracking-tight">A logistics partner that keeps trade moving.</h3>
+            <h3 className="mt-4 text-3xl font-black tracking-tight">Dependable logistics support, tailored to your cargo.</h3>
 
             <ul className="mt-8 space-y-4">
               {highlights.map((item) => (
@@ -198,22 +198,22 @@ export default function Home() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Planning</div>
               <div className="mt-4 text-2xl font-bold text-slate-900">Route optimization</div>
-              <p className="mt-4 text-slate-600">We design routing plans that balance speed, cost, and reliability across each shipment.</p>
+              <p className="mt-4 text-slate-600">We design practical shipping plans that balance cost, speed, and operational reliability.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Documentation</div>
               <div className="mt-4 text-2xl font-bold text-slate-900">End-to-end compliance</div>
-              <p className="mt-4 text-slate-600">Our documentation team helps manage customs, declarations, permits, and cross-border approvals.</p>
+              <p className="mt-4 text-slate-600">Our team works through paperwork, customs requirements, and clearances to reduce unnecessary delays.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Visibility</div>
               <div className="mt-4 text-2xl font-bold text-slate-900">Real-time updates</div>
-              <p className="mt-4 text-slate-600">Clients receive milestone tracking, proactive notifications, and portfolio visibility at every stage.</p>
+              <p className="mt-4 text-slate-600">We keep clients informed through every stage of the shipment journey, from pickup to delivery.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Support</div>
-              <div className="mt-4 text-2xl font-bold text-slate-900">Dedicated account team</div>
-              <p className="mt-4 text-slate-600">Each client is supported by a responsive logistics advisor focused on operational continuity.</p>
+              <div className="mt-4 text-2xl font-bold text-slate-900">Dedicated assistance</div>
+              <p className="mt-4 text-slate-600">Our team stays available to answer questions, resolve issues, and coordinate urgent freight needs.</p>
             </div>
           </div>
         </div>
@@ -241,16 +241,16 @@ export default function Home() {
               <span className="text-sm uppercase tracking-[0.2em] text-slate-500">Latest update</span>
               <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">On schedule</span>
             </div>
-            <div className="mt-5 text-2xl font-bold text-slate-900">AF-2048</div>
-            <div className="mt-3 text-slate-600">Arrived at a transshipment hub and is expected to clear customs tomorrow morning.</div>
+            <div className="mt-5 text-2xl font-bold text-slate-900">AC-2048</div>
+            <div className="mt-3 text-slate-600">Cargo arrived at the transit hub and is scheduled for customs processing tomorrow morning.</div>
             <div className="mt-8 space-y-4 text-sm text-slate-600">
               <div className="flex items-center justify-between border-b border-slate-200 pb-3">
                 <span>Current location</span>
-                <span className="font-semibold text-slate-900">Jebel Ali, UAE</span>
+                <span className="font-semibold text-slate-900">Dubai</span>
               </div>
               <div className="flex items-center justify-between border-b border-slate-200 pb-3">
                 <span>Destination</span>
-                <span className="font-semibold text-slate-900">Singapore</span>
+                <span className="font-semibold text-slate-900">Mogadishu</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>Estimated arrival</span>
@@ -265,14 +265,14 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">Contact us</p>
-            <h3 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">Ready to move your next shipment?</h3>
+            <h3 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">Need a dependable freight partner?</h3>
             <p className="mt-5 max-w-lg text-lg text-slate-300">
-              Speak with our team to plan freight forwarding, customs support, and supply-chain visibility for your business.
+              Talk with Airsell Cargo about air freight, sea freight, customs support, and end-to-end shipment coordination.
             </p>
             <div className="mt-8 space-y-4 text-slate-200">
-              <p>Phone: +971 4 555 2048</p>
-              <p>Email: hello@atlasfreight.com</p>
-              <p>Address: Dubai Logistics Park, UAE</p>
+              <p>Phone: +252 634 823310</p>
+              <p>Email: info@airsellcargo.com</p>
+              <p>Location: Somalia</p>
             </div>
           </div>
 

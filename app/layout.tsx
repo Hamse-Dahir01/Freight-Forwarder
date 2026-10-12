@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Atlas Freight | Air & Sea Freight Forwarding',
-  description: 'Professional freight forwarding solutions for air cargo, sea cargo, customs clearance, warehousing, and end-to-end logistics support.',
+  title: 'Airsell Cargo | Air & Sea Freight Forwarding',
+  description: 'Airsell Cargo provides reliable air and sea freight forwarding, customs clearance, warehousing, and end-to-end shipping support.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

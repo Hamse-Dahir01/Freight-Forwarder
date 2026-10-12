@@ -7,7 +7,7 @@ function Header() {
             A
           </div>
           <div>
-            <div className="text-lg font-bold tracking-tight">Atlas Freight</div>
+            <div className="text-lg font-bold tracking-tight">Airsell Cargo</div>
             <div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Global Logistics</div>
           </div>
         </a>
@@ -63,11 +63,11 @@ export default function QuotePage() {
             </div>
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">Origin</label>
-              <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Dubai" />
+              <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Mogadishu" />
             </div>
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">Destination</label>
-              <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Singapore" />
+              <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Dubai" />
             </div>
           </div>
           <div className="mt-5">

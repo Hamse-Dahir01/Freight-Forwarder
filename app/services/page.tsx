@@ -7,7 +7,7 @@ function Header() {
             A
           </div>
           <div>
-            <div className="text-lg font-bold tracking-tight">Atlas Freight</div>
+            <div className="text-lg font-bold tracking-tight">Airsell Cargo</div>
             <div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Global Logistics</div>
           </div>
         </a>
@@ -31,27 +31,27 @@ function Header() {
 const services = [
   {
     title: 'Air Freight',
-    copy: 'Priority air cargo solutions for time-sensitive, high-value, and urgent shipments.',
+    copy: 'Priority air cargo services for urgent shipments, time-sensitive cargo, and international delivery planning.',
   },
   {
     title: 'Sea Freight',
-    copy: 'Flexible FCL and LCL shipping for long-haul international trade and cost-effective cargo movement.',
+    copy: 'Flexible ocean freight options for containerized cargo and large-volume trade requirements.',
   },
   {
     title: 'Customs Clearance',
-    copy: 'Documentation, declaration support, and compliance coordination for smooth import and export processing.',
+    copy: 'Import and export document management, customs coordination, and compliance support to minimize delays.',
   },
   {
     title: 'Warehousing',
-    copy: 'Secure storage, handling, inventory visibility, and distribution support across key trade corridors.',
+    copy: 'Safe storage, inventory handling, and distribution support for growing import and export businesses.',
   },
   {
     title: 'Project Cargo',
-    copy: 'Specialized support for heavy, oversized, or complex cargo movement with coordination oversight.',
+    copy: 'Specialized handling for oversized, complex, or high-priority cargo movements throughout the supply chain.',
   },
   {
     title: 'Door-to-Door',
-    copy: 'Delivering end-to-end transportation and coordination from origin pickup to final destination delivery.',
+    copy: 'End-to-end cargo coordination from origin pickup to final destination delivery for smoother logistics operations.',
   },
 ];
 
@@ -63,7 +63,7 @@ export default function ServicesPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Services</p>
         <h1 className="mt-4 text-4xl font-black tracking-tight text-slate-900 md:text-5xl">Flexible logistics services for every shipment.</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-          We offer practical supply chain support for businesses moving goods across international and regional markets, with a focus on timing, visibility, and documentation quality.
+          Airsell Cargo supports importers, exporters, and freight customers with practical shipping solutions designed to keep cargo moving with fewer disruptions and clearer communication.
         </p>
       </section>
 

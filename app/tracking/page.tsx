@@ -7,7 +7,7 @@ function Header() {
             A
           </div>
           <div>
-            <div className="text-lg font-bold tracking-tight">Atlas Freight</div>
+            <div className="text-lg font-bold tracking-tight">Airsell Cargo</div>
             <div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Global Logistics</div>
           </div>
         </a>
@@ -29,9 +29,9 @@ function Header() {
 }
 
 const shipments = [
-  { id: 'AF-2048', route: 'Dubai → Singapore', status: 'In transit', detail: 'Customs processing scheduled for tomorrow morning.' },
-  { id: 'SF-7811', route: 'Shanghai → Jeddah', status: 'Arrived at port', detail: 'Terminal clearance in progress.' },
-  { id: 'AR-5029', route: 'Mumbai → Rotterdam', status: 'Delayed by weather', detail: 'Updated ETA shared with the client team.' },
+  { id: 'AC-2048', route: 'Mogadishu → Dubai', status: 'In transit', detail: 'Customs processing scheduled for tomorrow morning.' },
+  { id: 'AC-7811', route: 'Djibouti → Jeddah', status: 'Arrived at port', detail: 'Terminal clearance in progress.' },
+  { id: 'AC-5029', route: 'Nairobi → Doha', status: 'Delayed by weather', detail: 'Updated ETA shared with the client team.' },
 ];
 
 export default function TrackingPage() {
