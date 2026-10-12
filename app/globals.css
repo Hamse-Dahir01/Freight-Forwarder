@@ -13,9 +13,10 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #f8fafc;
+  background: linear-gradient(180deg, #f8fbff 0%, #f8fafc 100%);
   color: #0f172a;
   font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -32,6 +33,10 @@ textarea {
 img {
   max-width: 100%;
   display: block;
+}
+
+::selection {
+  background: rgba(15, 111, 197, 0.18);
 }
 
 @layer utilities {

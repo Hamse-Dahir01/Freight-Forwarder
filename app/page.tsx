@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { SiteFooter } from '../components/site-footer';
 import { SiteHeader } from '../components/site-header';
 
@@ -52,12 +53,12 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a href="/quote" className="rounded-full bg-brand-500 px-6 py-3.5 text-center text-base font-semibold text-white shadow-soft transition hover:bg-brand-700">
+            <Link href="/quote" className="rounded-full bg-brand-500 px-6 py-3.5 text-center text-base font-semibold text-white shadow-soft transition hover:bg-brand-700">
               Get a Freight Quote
-            </a>
-            <a href="/tracking" className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-center text-base font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-500">
+            </Link>
+            <Link href="/tracking" className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-center text-base font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-600">
               Track Shipment
-            </a>
+            </Link>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-500">
@@ -203,7 +204,7 @@ export default function Home() {
                 placeholder="Enter tracking number"
                 className="w-full rounded-full border border-slate-300 bg-slate-50 px-5 py-3.5 text-base text-slate-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
               />
-              <button className="rounded-full bg-brand-500 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700">
+              <button type="button" className="rounded-full bg-brand-500 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700">
                 Track Now
               </button>
             </div>
@@ -275,9 +276,9 @@ export default function Home() {
             </div>
             <div className="mt-5">
               <label className="mb-2 block text-sm font-medium text-slate-700">Shipment details</label>
-              <textarea className="min-h-[120px] w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Tell us about your cargo requirement" />
+              <textarea className="min-h-[120px] w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Tell us about your shipment and timeline" />
             </div>
-            <button className="mt-6 rounded-full bg-brand-500 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700">
+            <button type="button" className="mt-6 rounded-full bg-brand-500 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700">
               Request a Quote
             </button>
           </form>
