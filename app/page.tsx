@@ -1,38 +1,51 @@
 import Link from 'next/link';
+
 import { SiteFooter } from '../components/site-footer';
 import { SiteHeader } from '../components/site-header';
 
 const services = [
   {
     title: 'Air Freight',
-    description: 'Fast and dependable air cargo services for time-sensitive shipments, urgent goods, and cross-border deliveries.',
+    description: 'Priority air cargo for urgent shipments, cross-border deliveries, and time-sensitive consignments.',
   },
   {
     title: 'Sea Freight',
-    description: 'Flexible sea freight solutions for bulk shipments, container cargo, and cost-efficient international transport.',
+    description: 'Flexible ocean freight solutions for FCL, LCL, bulk cargo, and large-volume trade lanes.',
   },
   {
     title: 'Customs Clearance',
-    description: 'Efficient customs processing and documentation support to reduce delays and keep cargo moving without disruption.',
+    description: 'Accurate import and export documentation support to reduce delays and improve border efficiency.',
   },
   {
     title: 'Warehousing',
-    description: 'Secure storage, handling, and inventory support for importers, exporters, and businesses with growing supply chains.',
+    description: 'Secure short-term and long-term storage with inventory handling and coordination services.',
   },
 ];
 
 const stats = [
-  { number: '24/7', label: 'Customer support' },
-  { number: '100+', label: 'Shipments coordinated' },
-  { number: '99%', label: 'Operational reliability' },
-  { number: 'Global', label: 'Freight network' },
+  { value: '24/7', label: 'Client support' },
+  { value: '100+', label: 'Shipments coordinated' },
+  { value: '99%', label: 'On-time reliability' },
+  { value: 'Global', label: 'Trade coverage' },
 ];
 
-const highlights = [
+const process = [
+  { step: '01', title: 'Consultation', description: 'We assess your cargo requirements, route, timing, and budget expectations.' },
+  { step: '02', title: 'Planning', description: 'Our team prepares the best transport route, documentation, and execution timeline.' },
+  { step: '03', title: 'Delivery', description: 'We coordinate pickup, customs, transit, and final delivery with full visibility.' },
+];
+
+const benefits = [
   'Door-to-door cargo coordination',
-  'Reliable air and sea freight services',
-  'Transparent communication and updates',
-  'Customs and documentation assistance',
+  'Reliable air and sea freight management',
+  'Clear communication and delivery updates',
+  'Support for customs and compliance requirements',
+];
+
+const lanes = [
+  { route: 'Mogadishu → Dubai', eta: '4 days', status: 'In transit' },
+  { route: 'Djibouti → Jeddah', eta: '3 days', status: 'Clearing' },
+  { route: 'Nairobi → Doha', eta: '5 days', status: 'Scheduled' },
 ];
 
 export default function Home() {
@@ -40,82 +53,91 @@ export default function Home() {
     <main className="bg-slate-50 text-slate-900">
       <SiteHeader />
 
-      <section className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-        <div className="flex flex-col justify-center">
-          <span className="mb-5 inline-flex w-fit rounded-full border border-brand-100 bg-brand-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">
-            Trusted shipping partner
-          </span>
-          <h1 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
-            Shipping cargo across borders with speed and confidence.
-          </h1>
-          <p className="mt-6 max-w-xl text-lg text-slate-600">
-            Airsell Cargo helps businesses move goods safely and efficiently through air and sea freight solutions, customs support, and responsive logistics coordination.
-          </p>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-50 via-brand-50 to-transparent" />
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+          <div className="relative z-10 flex flex-col justify-center">
+            <span className="mb-5 inline-flex w-fit rounded-full border border-brand-100 bg-brand-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">
+              Trusted shipping partner
+            </span>
+            <h1 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
+              Freight solutions that keep your cargo moving with confidence.
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+              Airsell Cargo helps importers, exporters, and growing businesses move goods through air and sea freight with dependable planning, customs support, and real-time updates.
+            </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Link href="/quote" className="rounded-full bg-brand-500 px-6 py-3.5 text-center text-base font-semibold text-white shadow-soft transition hover:bg-brand-700">
-              Get a Freight Quote
-            </Link>
-            <Link href="/tracking" className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-center text-base font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-600">
-              Track Shipment
-            </Link>
-          </div>
-
-          <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-500">
-            <span>Air freight</span>
-            <span>•</span>
-            <span>Sea freight</span>
-            <span>•</span>
-            <span>Customs support</span>
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="absolute -left-6 top-8 h-32 w-32 rounded-full bg-brand-100 blur-3xl" />
-          <div className="absolute -right-10 bottom-10 h-36 w-36 rounded-full bg-sky-100 blur-3xl" />
-
-          <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft">
-            <div className="rounded-[1.5rem] bg-gradient-to-br from-brand-900 via-brand-700 to-sky-500 p-6 text-white">
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-sm uppercase tracking-[0.2em] text-sky-100">Live shipment</div>
-                  <div className="mt-3 text-3xl font-bold">AC-2048</div>
-                </div>
-                <div className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wider">
-                  In transit
-                </div>
-              </div>
-
-              <div className="mt-8 grid gap-6 sm:grid-cols-2">
-                <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-sky-100">Origin</div>
-                  <div className="mt-2 text-xl font-semibold">Mogadishu</div>
-                </div>
-                <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-sky-100">Destination</div>
-                  <div className="mt-2 text-xl font-semibold">Dubai</div>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <div className="mb-2 flex items-center justify-between text-sm text-sky-100">
-                  <span>Progress</span>
-                  <span>76%</span>
-                </div>
-                <div className="h-2.5 rounded-full bg-white/20">
-                  <div className="h-full w-[76%] rounded-full bg-white" />
-                </div>
-              </div>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/quote"
+                className="rounded-full bg-brand-500 px-6 py-3.5 text-center text-base font-semibold text-white shadow-soft transition hover:bg-brand-700"
+              >
+                Get a Freight Quote
+              </Link>
+              <Link
+                href="/tracking"
+                className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-center text-base font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-600"
+              >
+                Track Shipment
+              </Link>
             </div>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-slate-500">Route</div>
-                <div className="mt-2 text-lg font-semibold text-slate-800">Africa–Middle East</div>
+            <div className="mt-8 flex flex-wrap items-center gap-5 text-sm text-slate-500">
+              <span>Air freight</span>
+              <span className="text-slate-300">•</span>
+              <span>Sea freight</span>
+              <span className="text-slate-300">•</span>
+              <span>Customs coordination</span>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -left-8 top-8 h-32 w-32 rounded-full bg-brand-100 blur-3xl" />
+            <div className="absolute -right-6 bottom-6 h-36 w-36 rounded-full bg-sky-100 blur-3xl" />
+
+            <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-6 shadow-soft">
+              <div className="rounded-[1.5rem] bg-gradient-to-br from-brand-900 via-brand-700 to-sky-500 p-6 text-white">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-sm uppercase tracking-[0.2em] text-sky-100">Live shipment</div>
+                    <div className="mt-3 text-3xl font-bold">AC-2048</div>
+                  </div>
+                  <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em]">
+                    In transit
+                  </span>
+                </div>
+
+                <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <div className="text-xs uppercase tracking-[0.2em] text-sky-100">Origin</div>
+                    <div className="mt-2 text-xl font-semibold">Mogadishu</div>
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-[0.2em] text-sky-100">Destination</div>
+                    <div className="mt-2 text-xl font-semibold">Dubai</div>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <div className="mb-2 flex items-center justify-between text-sm text-sky-100">
+                    <span>Progress</span>
+                    <span>76%</span>
+                  </div>
+                  <div className="h-2.5 rounded-full bg-white/20">
+                    <div className="h-full w-[76%] rounded-full bg-white" />
+                  </div>
+                </div>
               </div>
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                <div className="text-xs uppercase tracking-[0.2em] text-slate-500">ETA</div>
-                <div className="mt-2 text-lg font-semibold text-slate-800">4 days</div>
+
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-slate-500">Route</div>
+                  <div className="mt-2 text-lg font-semibold text-slate-800">Africa–Middle East</div>
+                </div>
+                <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div className="text-xs uppercase tracking-[0.2em] text-slate-500">ETA</div>
+                  <div className="mt-2 text-lg font-semibold text-slate-800">4 days</div>
+                </div>
               </div>
             </div>
           </div>
@@ -126,7 +148,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-4 lg:px-8">
           {stats.map((item) => (
             <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
-              <div className="text-3xl font-black">{item.number}</div>
+              <div className="text-3xl font-black">{item.value}</div>
               <div className="mt-3 text-sm text-sky-100">{item.label}</div>
             </div>
           ))}
@@ -137,7 +159,7 @@ export default function Home() {
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Our services</p>
           <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-900 md:text-5xl">
-            Freight solutions built around your supply chain.
+            Flexible freight services for every shipment.
           </h2>
         </div>
 
@@ -153,47 +175,75 @@ export default function Home() {
       </section>
 
       <section className="bg-white py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-          <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-soft">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">Why choose us</p>
-            <h3 className="mt-4 text-3xl font-black tracking-tight">Dependable logistics support, tailored to your cargo.</h3>
-
-            <ul className="mt-8 space-y-4">
-              {highlights.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-base text-slate-200">
-                  <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-500 text-xs font-bold text-white">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Why choose us</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-900 md:text-5xl">
+              Dependable logistics support built around your business needs.
+            </h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-              <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Planning</div>
-              <div className="mt-4 text-2xl font-bold text-slate-900">Route optimization</div>
-              <p className="mt-4 text-slate-600">We design practical shipping plans that balance cost, speed, and operational reliability.</p>
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-soft">
+              <p className="text-sm uppercase tracking-[0.24em] text-sky-200">Our advantage</p>
+              <h3 className="mt-4 text-3xl font-black tracking-tight">Clear communication, solid coordination, and faster cargo movement.</h3>
+
+              <ul className="mt-8 space-y-4">
+                {benefits.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-base text-slate-200">
+                    <span className="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-500 text-xs font-bold text-white">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-              <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Documentation</div>
-              <div className="mt-4 text-2xl font-bold text-slate-900">End-to-end compliance</div>
-              <p className="mt-4 text-slate-600">Our team works through paperwork, customs requirements, and clearances to reduce unnecessary delays.</p>
-            </div>
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-              <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Visibility</div>
-              <div className="mt-4 text-2xl font-bold text-slate-900">Real-time updates</div>
-              <p className="mt-4 text-slate-600">We keep clients informed through every stage of the shipment journey, from pickup to delivery.</p>
-            </div>
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-              <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Support</div>
-              <div className="mt-4 text-2xl font-bold text-slate-900">Dedicated assistance</div>
-              <p className="mt-4 text-slate-600">Our team stays available to answer questions, resolve issues, and coordinate urgent freight needs.</p>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Planning</div>
+                <div className="mt-4 text-2xl font-bold text-slate-900">Route optimization</div>
+                <p className="mt-4 text-slate-600">We match each shipment to efficient port and air routes for cost and schedule control.</p>
+              </div>
+              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Documentation</div>
+                <div className="mt-4 text-2xl font-bold text-slate-900">Compliance support</div>
+                <p className="mt-4 text-slate-600">We manage customs paperwork and shipping documents to reduce costly delays.</p>
+              </div>
+              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Visibility</div>
+                <div className="mt-4 text-2xl font-bold text-slate-900">Real-time updates</div>
+                <p className="mt-4 text-slate-600">Clients receive timely shipment updates from origin to final destination.</p>
+              </div>
+              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Support</div>
+                <div className="mt-4 text-2xl font-bold text-slate-900">Dedicated assistance</div>
+                <p className="mt-4 text-slate-600">Our team stays responsive and proactive when urgent shipment challenges arise.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="mb-10 max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">How it works</p>
+          <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-900 md:text-5xl">
+            A simple process that stays efficient and transparent.
+          </h2>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {process.map((item) => (
+            <div key={item.step} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-soft">
+              <div className="text-2xl font-black text-brand-700">{item.step}</div>
+              <h3 className="mt-4 text-xl font-bold text-slate-900">{item.title}</h3>
+              <p className="mt-3 text-slate-600">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
         <div className="grid gap-8 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft lg:grid-cols-[1fr_0.9fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Shipment tracking</p>
@@ -212,24 +262,22 @@ export default function Home() {
 
           <div className="rounded-[1.5rem] bg-slate-50 p-6">
             <div className="flex items-center justify-between">
-              <span className="text-sm uppercase tracking-[0.2em] text-slate-500">Latest update</span>
-              <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">On schedule</span>
+              <span className="text-sm uppercase tracking-[0.2em] text-slate-500">Regional lanes</span>
+              <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">Live</span>
             </div>
-            <div className="mt-5 text-2xl font-bold text-slate-900">AC-2048</div>
-            <div className="mt-3 text-slate-600">Cargo arrived at the transit hub and is scheduled for customs processing tomorrow morning.</div>
-            <div className="mt-8 space-y-4 text-sm text-slate-600">
-              <div className="flex items-center justify-between border-b border-slate-200 pb-3">
-                <span>Current location</span>
-                <span className="font-semibold text-slate-900">Dubai</span>
-              </div>
-              <div className="flex items-center justify-between border-b border-slate-200 pb-3">
-                <span>Destination</span>
-                <span className="font-semibold text-slate-900">Mogadishu</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Estimated arrival</span>
-                <span className="font-semibold text-slate-900">4 days</span>
-              </div>
+
+            <div className="mt-5 space-y-4">
+              {lanes.map((lane) => (
+                <div key={lane.route} className="rounded-2xl border border-slate-200 bg-white p-4">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="text-base font-semibold text-slate-900">{lane.route}</div>
+                    <span className="rounded-full bg-sky-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-700">
+                      {lane.status}
+                    </span>
+                  </div>
+                  <div className="mt-2 text-sm text-slate-600">ETA: {lane.eta}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -241,7 +289,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">Contact us</p>
             <h3 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">Need a dependable freight partner?</h3>
             <p className="mt-5 max-w-lg text-lg text-slate-300">
-              Talk with Airsell Cargo about air freight, sea freight, customs support, and end-to-end shipment coordination.
+              Talk with Airsell Cargo about air freight, sea freight, customs support, and full shipment coordination.
             </p>
             <div className="mt-8 space-y-4 text-slate-200">
               <p>Phone: +252 634 823310</p>
@@ -276,7 +324,7 @@ export default function Home() {
             </div>
             <div className="mt-5">
               <label className="mb-2 block text-sm font-medium text-slate-700">Shipment details</label>
-              <textarea className="min-h-[120px] w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Tell us about your shipment and timeline" />
+              <textarea className="min-h-[120px] w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Tell us about your cargo and destination" />
             </div>
             <button type="button" className="mt-6 rounded-full bg-brand-500 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700">
               Request a Quote
