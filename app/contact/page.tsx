@@ -1,37 +1,10 @@
-function Header() {
-  return (
-    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500 text-lg font-bold text-white shadow-soft">
-            A
-          </div>
-          <div>
-            <div className="text-lg font-bold tracking-tight">Airsell Cargo</div>
-            <div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Global Logistics</div>
-          </div>
-        </a>
-
-        <nav className="hidden items-center gap-7 text-sm font-medium text-slate-600 md:flex">
-          <a href="/about" className="transition hover:text-brand-500">About</a>
-          <a href="/services" className="transition hover:text-brand-500">Services</a>
-          <a href="/tracking" className="transition hover:text-brand-500">Tracking</a>
-          <a href="/quote" className="transition hover:text-brand-500">Quote</a>
-          <a href="/contact" className="transition hover:text-brand-500">Contact</a>
-        </nav>
-
-        <a href="/quote" className="rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-700">
-          Request Quote
-        </a>
-      </div>
-    </header>
-  );
-}
+import { SiteFooter } from '../../components/site-footer';
+import { SiteHeader } from '../../components/site-header';
 
 export default function ContactPage() {
   return (
     <main className="bg-slate-50 text-slate-900">
-      <Header />
+      <SiteHeader />
       <section className="mx-auto max-w-5xl px-6 py-20 lg:px-8">
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Contact</p>
         <h1 className="mt-4 text-4xl font-black tracking-tight text-slate-900 md:text-5xl">We’re here to help plan your next shipment.</h1>
@@ -52,16 +25,16 @@ export default function ContactPage() {
             <div className="grid gap-5 md:grid-cols-2">
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Full name</label>
-                <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Your name" />
+                <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="Your full name" />
               </div>
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Email</label>
-                <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="name@company.com" />
+                <input className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="name@email.com" />
               </div>
             </div>
             <div className="mt-5">
               <label className="mb-2 block text-sm font-medium text-slate-700">Message</label>
-              <textarea className="min-h-[140px] w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="How can we help?" />
+              <textarea className="min-h-[140px] w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" placeholder="How can we help with your cargo needs?" />
             </div>
             <button className="mt-6 rounded-full bg-brand-500 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700">
               Send Message
@@ -69,6 +42,8 @@ export default function ContactPage() {
           </form>
         </div>
       </section>
+
+      <SiteFooter />
     </main>
   );
 }
