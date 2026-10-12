@@ -1,91 +1,98 @@
 const services = [
   {
     title: 'Air Freight',
-    description: 'Priority air cargo solutions for urgent shipments, time-sensitive inventory, and global distribution.',
+    description: 'Fast-moving air cargo solutions for urgent, time-sensitive, and high-value shipments across global trade lanes.',
   },
   {
     title: 'Sea Freight',
-    description: 'Flexible FCL and LCL shipping with dependable transit planning for ocean cargo across major routes.',
+    description: 'Flexible FCL and LCL ocean freight options designed for cost efficiency and reliable transit schedules.',
   },
   {
     title: 'Customs Clearance',
-    description: 'Accurate documentation, duty management, and cross-border compliance support from port to warehouse.',
+    description: 'Documentation, compliance checks, and border coordination help reduce delays and keep cargo moving smoothly.',
   },
   {
     title: 'Warehousing',
-    description: 'Storage, inventory visibility, and value-added logistics support for import and export operations.',
+    description: 'Secure storage, inventory visibility, and distribution support for import, export, and bonded operations.',
   },
 ];
 
 const stats = [
-  { number: '25+', label: 'Years of logistics experience' },
-  { number: '120+', label: 'Global trade lanes' },
+  { number: '25+', label: 'Years of logistics expertise' },
+  { number: '120+', label: 'Global trade routes served' },
   { number: '99.5%', label: 'On-time milestone performance' },
-  { number: '24/7', label: 'Shipment support' },
+  { number: '24/7', label: 'Client support' },
 ];
 
 const highlights = [
-  'Door-to-door shipping coordination',
+  'Door-to-door logistics coordination',
   'Experienced air and sea freight specialists',
-  'Transparent pricing and milestone updates',
-  'Strong compliance and documentation support',
+  'Transparent pricing and milestone tracking',
+  'Clear customs and compliance support',
 ];
+
+function Header() {
+  return (
+    <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+        <a href="/" className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500 text-lg font-bold text-white shadow-soft">
+            A
+          </div>
+          <div>
+            <div className="text-lg font-bold tracking-tight">Atlas Freight</div>
+            <div className="text-[10px] uppercase tracking-[0.24em] text-slate-500">Global Logistics</div>
+          </div>
+        </a>
+
+        <nav className="hidden items-center gap-7 text-sm font-medium text-slate-600 md:flex">
+          <a href="/about" className="transition hover:text-brand-500">About</a>
+          <a href="/services" className="transition hover:text-brand-500">Services</a>
+          <a href="/tracking" className="transition hover:text-brand-500">Tracking</a>
+          <a href="/quote" className="transition hover:text-brand-500">Quote</a>
+          <a href="/contact" className="transition hover:text-brand-500">Contact</a>
+        </nav>
+
+        <a href="/quote" className="rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-700">
+          Request Quote
+        </a>
+      </div>
+    </header>
+  );
+}
 
 export default function Home() {
   return (
     <main className="bg-slate-50 text-slate-900">
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md sticky top-0 z-20">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500 text-lg font-bold text-white shadow-soft">
-              A
-            </div>
-            <div>
-              <div className="text-lg font-bold tracking-tight">Atlas Freight</div>
-              <div className="text-xs uppercase tracking-[0.2em] text-slate-500">Global Logistics</div>
-            </div>
-          </div>
-
-          <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
-            <a href="#services" className="transition hover:text-brand-500">Services</a>
-            <a href="#solutions" className="transition hover:text-brand-500">Solutions</a>
-            <a href="#tracking" className="transition hover:text-brand-500">Tracking</a>
-            <a href="#contact" className="transition hover:text-brand-500">Contact</a>
-          </nav>
-
-          <button className="rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-700">
-            Request a Quote
-          </button>
-        </div>
-      </header>
+      <Header />
 
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
         <div className="flex flex-col justify-center">
           <span className="mb-5 inline-flex w-fit rounded-full border border-brand-100 bg-brand-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">
-            Reliable shipping partners
+            Trusted shipping partners
           </span>
           <h1 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
             Move cargo globally with confidence.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-slate-600">
-            From urgent airfreight to large-scale sea freight operations, we help businesses ship smarter, faster, and with complete visibility.
+            From urgent air shipments to cost-effective sea freight and customs coordination, we help businesses move goods faster, smarter, and with full visibility.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <button className="rounded-full bg-brand-500 px-6 py-3.5 text-base font-semibold text-white shadow-soft transition hover:bg-brand-700">
+            <a href="/quote" className="rounded-full bg-brand-500 px-6 py-3.5 text-center text-base font-semibold text-white shadow-soft transition hover:bg-brand-700">
               Get a Freight Quote
-            </button>
-            <button className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-500">
+            </a>
+            <a href="/tracking" className="rounded-full border border-slate-300 bg-white px-6 py-3.5 text-center text-base font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-500">
               Track Shipment
-            </button>
+            </a>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-500">
-            <span>Trusted by importers</span>
+            <span>Import & export logistics</span>
             <span>•</span>
-            <span>Customs specialists</span>
+            <span>Customs support</span>
             <span>•</span>
-            <span>24/7 support</span>
+            <span>24/7 operations</span>
           </div>
         </div>
 
@@ -171,7 +178,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="solutions" className="bg-white py-20">
+      <section className="bg-white py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-soft">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">Why choose us</p>
@@ -191,28 +198,28 @@ export default function Home() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Planning</div>
               <div className="mt-4 text-2xl font-bold text-slate-900">Route optimization</div>
-              <p className="mt-4 text-slate-600">We design routing plans to balance speed, cost, and reliability across each shipment.</p>
+              <p className="mt-4 text-slate-600">We design routing plans that balance speed, cost, and reliability across each shipment.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Documentation</div>
               <div className="mt-4 text-2xl font-bold text-slate-900">End-to-end compliance</div>
-              <p className="mt-4 text-slate-600">Our documentation team helps manage customs requirements, declarations, and approvals.</p>
+              <p className="mt-4 text-slate-600">Our documentation team helps manage customs, declarations, permits, and cross-border approvals.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Visibility</div>
               <div className="mt-4 text-2xl font-bold text-slate-900">Real-time updates</div>
-              <p className="mt-4 text-slate-600">Clients get milestone tracking, alerts, and proactive updates during every transit phase.</p>
+              <p className="mt-4 text-slate-600">Clients receive milestone tracking, proactive notifications, and portfolio visibility at every stage.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm uppercase tracking-[0.2em] text-slate-500">Support</div>
               <div className="mt-4 text-2xl font-bold text-slate-900">Dedicated account team</div>
-              <p className="mt-4 text-slate-600">Each client is supported by an experienced logistics advisor focused on operational continuity.</p>
+              <p className="mt-4 text-slate-600">Each client is supported by a responsive logistics advisor focused on operational continuity.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="tracking" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="grid gap-8 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft lg:grid-cols-[1fr_0.9fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Shipment tracking</p>
@@ -235,7 +242,7 @@ export default function Home() {
               <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">On schedule</span>
             </div>
             <div className="mt-5 text-2xl font-bold text-slate-900">AF-2048</div>
-            <div className="mt-3 text-slate-600">Arrived at transshipment hub and is scheduled for customs processing tomorrow morning.</div>
+            <div className="mt-3 text-slate-600">Arrived at a transshipment hub and is expected to clear customs tomorrow morning.</div>
             <div className="mt-8 space-y-4 text-sm text-slate-600">
               <div className="flex items-center justify-between border-b border-slate-200 pb-3">
                 <span>Current location</span>
@@ -254,13 +261,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="bg-slate-900 py-20 text-white">
+      <section className="bg-slate-900 py-20 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">Contact us</p>
             <h3 className="mt-4 text-3xl font-black tracking-tight md:text-5xl">Ready to move your next shipment?</h3>
             <p className="mt-5 max-w-lg text-lg text-slate-300">
-              Speak with our team to plan freight forwarding, customs support, and supply chain visibility for your business.
+              Speak with our team to plan freight forwarding, customs support, and supply-chain visibility for your business.
             </p>
             <div className="mt-8 space-y-4 text-slate-200">
               <p>Phone: +971 4 555 2048</p>
