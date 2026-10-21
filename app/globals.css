@@ -13,7 +13,9 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #f8fbff 0%, #f8fafc 100%);
+  background:
+    radial-gradient(circle at top, rgba(14, 116, 144, 0.12), transparent 28%),
+    linear-gradient(180deg, #f7fbff 0%, #eef6ff 100%);
   color: #0f172a;
   font-family: Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
@@ -36,11 +38,15 @@ img {
 }
 
 ::selection {
-  background: rgba(15, 111, 197, 0.18);
+  background: rgba(14, 116, 144, 0.18);
 }
 
 @layer utilities {
   .shadow-soft {
-    box-shadow: 0 20px 50px rgba(15, 111, 197, 0.12);
+    box-shadow: 0 20px 50px rgba(12, 86, 142, 0.12);
+  }
+
+  .section-shell {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
   }
 }
